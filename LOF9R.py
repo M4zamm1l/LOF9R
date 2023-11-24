@@ -738,17 +738,6 @@ died=0
 live=0
 import os,sys,time,re,uuid,base64,zlib,subprocess
 from concurrent.futures import  ThreadPoolExecutor as tpe
-try:
-    import pycurl
-    from io import BytesIO
-except:
-    os.system('pip install pycurl')
-    import pycurl
-    from io import BytesIO
-try:import pycurl
-except:os.system('pkg uninstall python;pkg install python -y;pip install pycurl')
-try:import pycurl
-except:print('\n Pycurl Module Error!\n Contact With Owner! ');exit()
 import random
 def random_ua():
     model = "iPhone"+str(random.randint(4,16))+','+str(random.randint(1,9))
